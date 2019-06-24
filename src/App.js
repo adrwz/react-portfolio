@@ -1,6 +1,7 @@
 import React from 'react';
 import './fonts.css';
 import './App.scss';
+import AboutLayer from './components/AboutLayer/AboutLayer';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -8,7 +9,7 @@ export default class App extends React.Component {
 
     this.state = {
       hoverIndex: 0,
-      showAboutIndex: false,
+      aboutIndex: 0,
     }
   }
 
@@ -18,9 +19,21 @@ export default class App extends React.Component {
     })
   }
 
-  setAboutIndex(index) {
+  closeAbout() {
     this.setState({
-      showAboutIndex: index,
+      aboutIndex: 0,
+    })
+  }
+
+  openAbout() {
+    this.setState({
+      aboutIndex: 1,
+    })
+  }
+
+  openContact() {
+    this.setState({
+      aboutIndex: 2,
     })
   }
 
@@ -28,6 +41,10 @@ export default class App extends React.Component {
 
     return (
       <div className="App">
+        <AboutLayer
+          aboutIndex={this.state.aboutIndex}
+          closeAbout={this.closeAbout.bind(this)}
+          />
         <div className="App-basicLine1"></div>
         <div className="App-basicLine2"></div>
         <div className="App-basicLine3"></div>
@@ -39,9 +56,9 @@ export default class App extends React.Component {
         <div className="App-basicLine9"></div>
 
         <div className="App-topLinks"><u>
-          <a className="App-link first">About</a>
+          <a className="App-link first" onClick={this.openAbout.bind(this)}>About</a>
           <a className="App-link mid">Resume</a>
-          <a className="App-link last">Contact</a>
+          <a className="App-link last" onClick={this.openContact.bind(this)}>Contact</a>
         </u></div>
         <div className="App-basicBackground">
           <img src={require('./images/name-basic.png')} alt="ERROR: Please reload." className="App-basicLogo" />

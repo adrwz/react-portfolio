@@ -29,9 +29,10 @@ html, body {
   }
 
   &-basicLogo {
-    width: 100%;
+    width: 70vw;
     margin-top: 15vh;
     opacity: 0;
+    position: absolute;
     animation: initialLogo 2.5s ease 1.5s;
     animation-fill-mode: forwards;
 
