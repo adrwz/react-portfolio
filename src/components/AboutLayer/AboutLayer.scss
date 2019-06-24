@@ -35,14 +35,89 @@
   &-title {
     margin: 0;
     position: absolute;
-    top: calc(29.8vh - 7.5vw);
+    top: calc(14.8vh - 5.5vw);
     left: 15vw;
     color: #231f20;
 
     font: {
       family: source-sans-pro, sans-serif;
       weight: 700;
-      size: 7.5vw;
+      size: 5.5vw;
+    }
+
+    clip-path: inset(0vh 50vw 0vh 0vw);
+    animation: aboutOpenTitle 1s ease 0.6s;
+    animation-fill-mode: forwards;
+
+    @keyframes aboutOpenTitle {
+      0% {
+        clip-path: inset(0vh 50vw 0vh 0vw);
+      }
+
+      100% {
+        clip-path: inset(0vh 0vw 0vh 0vw);
+      }
+    }
+  }
+
+  &-p {
+    margin: 0;
+    position: absolute;
+    top: 14.3vh;
+    left: 15vw;
+    right: 15vw;
+    text-align: justify;
+    line-height: 2.49vw;
+    color: #231f20;
+
+    font: {
+      family: proxima nova, sans-serif;
+      weight: 400;
+      size: 2.1vw;
+    }
+
+    opacity: 0;
+    animation: aboutOpenP 1s ease 1.9s;
+    animation-fill-mode: forwards;
+
+    @keyframes aboutOpenP {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
+
+    &.contact {
+      top: 40vh;
+    }
+  }
+
+  &-link {
+    text-decoration: none;
+    color: #231f20;
+  }
+
+  &-img {
+    position: absolute;
+    height: 27.7vh;
+    top: 72.3vh;
+    right: 15vw;
+
+    opacity: 0;
+    animation: aboutOpenImg 1s ease 2.3s;
+    animation-fill-mode: forwards;
+
+    @keyframes aboutOpenImg {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
     }
   }
 
@@ -64,6 +139,20 @@
     &:hover {
       color: black;
     }
+
+    opacity: 0;
+    animation: aboutOpenX 1s ease 2.5s;
+    animation-fill-mode: forwards;
+
+    @keyframes aboutOpenX {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+      }
+    }
   }
 
 
@@ -81,7 +170,7 @@
       width: 100%;
       background-color: black;
       position: absolute;
-      top: 30vh;
+      top: 15vh;
 
       clip-path: inset(0vh 100vw 0vh 0vw);
       animation: initialLine1 1.5s ease 0.5s;
