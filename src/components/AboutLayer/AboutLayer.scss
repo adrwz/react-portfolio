@@ -67,13 +67,12 @@
     left: 15vw;
     right: 15vw;
     text-align: justify;
-    line-height: 2.49vw;
     color: #231f20;
 
     font: {
       family: proxima nova, sans-serif;
-      weight: 400;
-      size: 2.1vw;
+      weight: 300;
+      size: 1.8vw;
     }
 
     opacity: 0;
@@ -91,7 +90,7 @@
     }
 
     &.contact {
-      top: 40vh;
+      top: 38vh;
     }
   }
 
@@ -103,8 +102,13 @@
   &-img {
     position: absolute;
     height: 27.7vh;
-    top: 72.3vh;
     right: 15vw;
+    top: calc(30vh + 22.65vw);
+    top: -webkit-calc(30vh + 22.65vw);
+    top: -moz-calc(30vh + 22.65vw);
+    height: calc(70vh - 22.65vw);
+    height: -webkit-calc(70vh - 22.65vw);
+    height: -moz-calc(70vh - 22.65vw);
 
     opacity: 0;
     animation: aboutOpenImg 1s ease 2.3s;

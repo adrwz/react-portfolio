@@ -49,6 +49,7 @@ html, body {
 
   &-topLinks {
     position: absolute;
+    z-index: 9;
     top: 2vw;
     left: 15vw;
   }
@@ -57,6 +58,7 @@ html, body {
     margin-right: 3vw;
     color: #6D6D6D;
     cursor: pointer;
+    transition: 1s;
 
     font: {
       family: source sans pro, sans-serif;
@@ -115,6 +117,18 @@ html, body {
         }
       }
     }
+
+    &.top1 {
+      color: white;
+    }
+
+    &.top2 {
+      color: white;
+    }
+
+    &.top3 {
+      color: black;
+    }
   }
 
   &-hoverHere {
@@ -162,7 +176,7 @@ html, body {
     width: 100%;
     text-align: center;
     opacity: 0.5;
-    z-index: 1;
+    z-index: 9;
 
     top: 100vh;
     animation: initialBottomLinks 1s ease 2.5s;
@@ -180,6 +194,7 @@ html, body {
 
     &Overlay {
       position: absolute;
+      z-index: 8;
       top: 84vh;
       width: 100%;
       text-align: center;
@@ -210,8 +225,55 @@ html, body {
       margin-right: 0vw;
     }
 
-    &.hover {
+    &.passive1 {
+      opacity: 1;
+      text-shadow:
+        -1px -1px 0 #8fcfad,
+        1px -1px 0 #8fcfad,
+        -1px 1px 0 #8fcfad,
+        1px 1px 0 #8fcfad;
+        color: #323638;
+    }
+
+    &.passive2 {
+      opacity: 1;
+      text-shadow:
+        -1px -1px 0 #fff,
+        1px -1px 0 #fff,
+        -1px 1px 0 #fff,
+        1px 1px 0 #fff;
+        color: #2975b1;
+    }
+
+    &.passive3 {
+      opacity: 1;
+      text-shadow:
+        -1px -1px 0 #df2380,
+        1px -1px 0 #df2380,
+        -1px 1px 0 #df2380,
+        1px 1px 0 #df2380;
+        color: #efe8f0;
+    }
+
+    &.hover1 {
+      opacity: 1;
       top: -5vh;
+      color: #8fcfad;
+      text-shadow: none;
+    }
+
+    &.hover2 {
+      opacity: 1;
+      top: -5vh;
+      color: #fff;
+      text-shadow: none;
+    }
+
+    &.hover3 {
+      opacity: 1;
+      top: -5vh;
+      color: #df2380;
+      text-shadow: none;
     }
 
     &Overlay {
@@ -234,7 +296,23 @@ html, body {
         margin-right: 0vw;
       }
 
-      &.hover {
+      &.hover1 {
+        opacity: 1;
+        color: #8fcfad;
+        clip-path: inset(0vh 0vw 0vh 0vw);
+        top: -5vh;
+      }
+
+      &.hover2 {
+        opacity: 1;
+        color: #fff;
+        clip-path: inset(0vh 0vw 0vh 0vw);
+        top: -5vh;
+      }
+
+      &.hover3 {
+        opacity: 1;
+        color: #df2380;
         clip-path: inset(0vh 0vw 0vh 0vw);
         top: -5vh;
       }
