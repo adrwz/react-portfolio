@@ -260,6 +260,7 @@ html, body {
       top: -5vh;
       color: #8fcfad;
       text-shadow: none;
+      font-size: 4vw;
     }
 
     &.hover2 {
@@ -267,6 +268,7 @@ html, body {
       top: -5vh;
       color: #fff;
       text-shadow: none;
+      font-size: 4vw;
     }
 
     &.hover3 {
@@ -274,6 +276,7 @@ html, body {
       top: -5vh;
       color: #df2380;
       text-shadow: none;
+      font-size: 4vw;
     }
 
     &Overlay {
@@ -301,6 +304,7 @@ html, body {
         color: #8fcfad;
         clip-path: inset(0vh 0vw 0vh 0vw);
         top: -5vh;
+        font-size: 4vw;
       }
 
       &.hover2 {
@@ -308,6 +312,7 @@ html, body {
         color: #fff;
         clip-path: inset(0vh 0vw 0vh 0vw);
         top: -5vh;
+        font-size: 4vw;
       }
 
       &.hover3 {
@@ -315,6 +320,7 @@ html, body {
         color: #df2380;
         clip-path: inset(0vh 0vw 0vh 0vw);
         top: -5vh;
+        font-size: 4vw;
       }
     }
   }

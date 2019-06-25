@@ -40,6 +40,10 @@ export default class App extends React.Component {
     })
   }
 
+  goToFile(file) {
+    window.location.href = file;
+  }
+
   render() {
     //Handles top & bottom link classes
     var first = "App-hoverLink first";
@@ -51,7 +55,7 @@ export default class App extends React.Component {
     var topFirst = "App-link first";
     var topMid = "App-link mid";
     var topLast = "App-link last";
-    if(this.state.hoverIndex == 1) {
+    if(this.state.hoverIndex === 1) {
       first += " hover1";
       mid += " passive1";
       last += " passive1";
@@ -61,7 +65,7 @@ export default class App extends React.Component {
       topFirst += " top1";
       topMid += " top1";
       topLast += " top1";
-    } else if(this.state.hoverIndex == 2) {
+    } else if(this.state.hoverIndex === 2) {
       first += " passive2";
       mid += " hover2";
       last += " passive2";
@@ -71,7 +75,7 @@ export default class App extends React.Component {
       topFirst += " top2";
       topMid += " top2";
       topLast += " top2";
-    } else if(this.state.hoverIndex == 3) {
+    } else if(this.state.hoverIndex === 3) {
       first += " passive3";
       mid += " passive3";
       last += " hover3";
@@ -91,14 +95,14 @@ export default class App extends React.Component {
           closeAbout={this.closeAbout.bind(this)}
           />
           {
-            this.state.secondIndex == 0 ? <div></div>
+            this.state.secondIndex === 0 ? <div></div>
             :
             <HoverLayer
               secondIndex={this.state.secondIndex}
               />
           }
         {
-          this.state.hoverIndex == 0 ? <div></div>
+          this.state.hoverIndex === 0 ? <div></div>
           :
           <HoverLayer
             index={this.state.hoverIndex}
@@ -124,12 +128,12 @@ export default class App extends React.Component {
           <img src={require('./images/name-basic.png')} alt="ERROR: Please reload." className="App-basicLogo" />
         </div>
 
-        <p className={this.state.hoverIndex == 0 ? "App-hoverHere" : "App-hoverHere none"}>Hover over me!<img src={require('./images/arrow.png')} className="App-hoverHereImg" /></p>
+        <p className={this.state.hoverIndex === 0 ? "App-hoverHere" : "App-hoverHere none"}>Hover over me!<img src={require('./images/arrow.png')} className="App-hoverHereImg" /></p>
 
         <div className="App-bottomLinks">
-          <a className={first} onMouseEnter={this.setHoverIndex.bind(this, 1)}>Programming</a>
-          <a className={mid} onMouseEnter={this.setHoverIndex.bind(this, 2)}>Design</a>
-          <a className={last} onMouseEnter={this.setHoverIndex.bind(this, 3)}>Entrepreneurship</a>
+          <a className={first} onMouseEnter={this.setHoverIndex.bind(this, 1)} onClick={this.goToFile.bind(this, "programming.html")}>Programming</a>
+          <a className={mid} onMouseEnter={this.setHoverIndex.bind(this, 2)} onClick={this.goToFile.bind(this, "design.html")}>Design</a>
+          <a className={last} onMouseEnter={this.setHoverIndex.bind(this, 3)} onClick={this.goToFile.bind(this, "entrepreneurship.html")}>Entrepreneurship</a>
         </div>
         <div className="App-bottomLinksOverlay">
           <a className={firstOverlay}>Programming</a>

@@ -63,7 +63,7 @@
   &-p {
     margin: 0;
     position: absolute;
-    top: 14.3vh;
+    top: 14.6vh;
     left: 15vw;
     right: 15vw;
     text-align: justify;
@@ -110,17 +110,17 @@
     height: -webkit-calc(70vh - 22.65vw);
     height: -moz-calc(70vh - 22.65vw);
 
-    opacity: 0;
-    animation: aboutOpenImg 1s ease 2.3s;
+    clip-path: inset(0vh 40vw 0vh 0vw);
+    animation: aboutOpenImg 1s ease 1.3s;
     animation-fill-mode: forwards;
 
     @keyframes aboutOpenImg {
       0% {
-        opacity: 0;
+        clip-path: inset(0vh 40vw 0vh 0vw);
       }
 
       100% {
-        opacity: 1;
+        clip-path: inset(0vh 0vw 0vh 0vw);
       }
     }
   }

@@ -31,11 +31,11 @@ export default class AboutLayer extends React.Component {
 
   render() {
     var bgClass = "About-bg ";
-    if(this.props.aboutIndex == 0) {
+    if(this.props.aboutIndex === 0) {
       bgClass += "destroy";
-    } else if(this.state.bgState == 1) {
+    } else if(this.state.bgState === 1) {
       bgClass += "close";
-    } else if(this.state.bgState == 2) {
+    } else if(this.state.bgState === 2) {
       this.props.closeAbout();
       this.resetBgState();
     }
@@ -48,19 +48,19 @@ export default class AboutLayer extends React.Component {
         <div className="About-basicLine4"></div>
 
         {
-          this.props.aboutIndex == 1 ? <h1 className="About-title">Who am I?</h1> : <div></div>
+          this.props.aboutIndex === 1 ? <h1 className="About-title">Who am I?</h1> : <div></div>
         }
         {
-          this.props.aboutIndex == 2 ? <h1 className="About-title">Let's get in touch!</h1> : <div></div>
+          this.props.aboutIndex === 2 ? <h1 className="About-title">Let's get in touch!</h1> : <div></div>
         }
         {
-          this.props.aboutIndex == 1 ?
+          this.props.aboutIndex === 1 ?
           <p className="About-p">
-            I am a second year student at UCLA passionate about front-end development, design, and entrepreneurship. Since my start my Freshman year in high school, I've realized I wanted to make an impact on others&apos; lives; having this trio of skills will assist me in doing just that.
+            I am an incoming second year student at UCLA passionate about front-end development, design, and entrepreneurship. Since my start my Freshman year in high school, I've realized I wanted to make an impact on others&apos; lives; having this trio of skills will assist me in doing just that.
             <br/><br/>
             As I improved my code ability, I spent more time developing other essential skills, from speaking to business and marketing to art and design. Using every one of these skills, I've put together various different projects, each of which represent my ability in each relevant area. Please do not hesitate to click around and view the many projects I have laying around this website.
             <br/><br/>
-            Thank you, and I hope we can connect in the future.
+            Thank you, and I hope we can connect in the future!
             <br/>
             -Andrew Zhou
           </p>
