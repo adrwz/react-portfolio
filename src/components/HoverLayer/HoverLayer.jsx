@@ -40,7 +40,10 @@ export default class HoverLayer extends React.Component {
     if(this.props.index === 1) {
       mainItems =
         <div>
-
+          <img className="Hover-line1" src={require('./../../images/programming/line1.png')} />
+          <img className="Hover-line4" src={require('./../../images/programming/line4.png')} />
+          <img className="Hover-line2" src={require('./../../images/programming/line2.png')} />
+          <img className="Hover-line3" src={require('./../../images/programming/line3.png')} />
         </div>;
     } else if(this.props.index === 2) {
       mainItems =
@@ -56,7 +59,10 @@ export default class HoverLayer extends React.Component {
     if(this.props.secondIndex === 1) {
       backgroundItems =
         <div>
-
+          <img className="Hover-line1" src={require('./../../images/programming/line1.png')} />
+          <img className="Hover-line4" src={require('./../../images/programming/line4.png')} />
+          <img className="Hover-line2" src={require('./../../images/programming/line2.png')} />
+          <img className="Hover-line3" src={require('./../../images/programming/line3.png')} />
         </div>;
     } else if(this.props.secondIndex === 2) {
       backgroundItems =
