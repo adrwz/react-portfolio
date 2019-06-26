@@ -110,13 +110,13 @@
     height: -webkit-calc(70vh - 22.65vw);
     height: -moz-calc(70vh - 22.65vw);
 
-    clip-path: inset(0vh 40vw 0vh 0vw);
+    clip-path: inset(0vh 42vw 0vh 0vw);
     animation: aboutOpenImg 1s ease 1.3s;
     animation-fill-mode: forwards;
 
     @keyframes aboutOpenImg {
       0% {
-        clip-path: inset(0vh 40vw 0vh 0vw);
+        clip-path: inset(0vh 42vw 0vh 0vw);
       }
 
       100% {

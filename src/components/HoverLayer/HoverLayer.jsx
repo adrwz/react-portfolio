@@ -29,7 +29,7 @@ export default class HoverLayer extends React.Component {
     else if(this.props.secondIndex === 3) bgClass += "3";
 
     //Handles image name and image styling
-    let img = require('./../../images/name-1.png');
+    let img;
     let img2;
     if(this.props.index == 1 || this.props.index == 2 || this.props.index == 3) img = require('./../../images/name-' + this.props.index + ".png");
     if(this.props.secondIndex == 1 || this.props.secondIndex == 2 || this.props.secondIndex == 3) img2 = require('./../../images/name-' + this.props.secondIndex + ".png");
@@ -48,7 +48,18 @@ export default class HoverLayer extends React.Component {
     } else if(this.props.index === 2) {
       mainItems =
         <div>
-
+          <img className="Hover-design1" src={require('./../../images/design/mainfront.png')} />
+          <img className="Hover-design2" src={require('./../../images/design/mainfrontline.png')} />
+          <div className="Hover-design2-1"></div>
+          <div className="Hover-design2-2"></div>
+          <img className="Hover-design3" src={require('./../../images/design/mainisometric.png')} />
+          <img className="Hover-design4" src={require('./../../images/design/mainx.png')} />
+          <img className="Hover-design5" src={require('./../../images/design/mainy.png')} />
+          <img className="Hover-design6" src={require('./../../images/design/mainz.png')} />
+          <img className="Hover-design7" src={require('./../../images/design/mainlabel1.png')} />
+          <img className="Hover-design8" src={require('./../../images/design/mainlabel2.png')} />
+          <img className="Hover-design9" src={require('./../../images/design/mainlabel3.png')} />
+          <img className="Hover-design10" src={require('./../../images/design/mainlabel4.png')} />
         </div>;
     } else if(this.props.index === 3) {
       mainItems =
@@ -59,16 +70,27 @@ export default class HoverLayer extends React.Component {
     if(this.props.secondIndex === 1) {
       backgroundItems =
         <div>
-          <img className="Hover-line1" src={require('./../../images/programming/line1.png')} />
-          <img className="Hover-line4" src={require('./../../images/programming/line4.png')} />
-          <img className="Hover-line2" src={require('./../../images/programming/line2.png')} />
-          <img className="Hover-line3" src={require('./../../images/programming/line3.png')} />
+          <img className="Hover-line1d" src={require('./../../images/programming/line1.png')} />
+          <img className="Hover-line4d" src={require('./../../images/programming/line4.png')} />
+          <img className="Hover-line2d" src={require('./../../images/programming/line2.png')} />
+          <img className="Hover-line3d" src={require('./../../images/programming/line3.png')} />
         </div>;
     } else if(this.props.secondIndex === 2) {
-      backgroundItems =
-        <div>
-
-        </div>;
+      // backgroundItems = 
+      //   <div>
+      //     <img className="Hover-design1d" src={require('./../../images/design/mainfront.png')} />
+      //     <img className="Hover-design2d" src={require('./../../images/design/mainfrontline.png')} />
+      //     <div className="Hover-design2-1d"></div>
+      //     <div className="Hover-design2-2d"></div>
+      //     <img className="Hover-design3d" src={require('./../../images/design/mainisometric.png')} />
+      //     <img className="Hover-design4d" src={require('./../../images/design/mainx.png')} />
+      //     <img className="Hover-design5d" src={require('./../../images/design/mainy.png')} />
+      //     <img className="Hover-design6d" src={require('./../../images/design/mainz.png')} />
+      //     <img className="Hover-design7d" src={require('./../../images/design/mainlabel1.png')} />
+      //     <img className="Hover-design8d" src={require('./../../images/design/mainlabel2.png')} />
+      //     <img className="Hover-design9d" src={require('./../../images/design/mainlabel3.png')} />
+      //     <img className="Hover-design10d" src={require('./../../images/design/mainlabel4.png')} />
+      //   </div>;
     } else if(this.props.secondIndex === 3) {
       backgroundItems =
         <div>
