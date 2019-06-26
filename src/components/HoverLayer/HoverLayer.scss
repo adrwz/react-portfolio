@@ -160,6 +160,43 @@
     }
   }
 
+  &-clickMe {
+    position: absolute;
+    top: 74vh;
+    left: 7.7vw;
+    color: white;
+    transition: 1s;
+    opacity: 0;
+
+    font: {
+      family: source sans, sans-serif;
+      weight: 300;
+      size: 1.5vw;
+    }
+
+    &Img  {
+      height: 1vw;
+      position: relative;
+      top: 0.5vh;
+      left: 0.3vw;
+    }
+
+    &.cm1 {
+      opacity: 1;
+    }
+
+    &.cm2 {
+      opacity: 1;
+      left: 41.3vw;
+    }
+
+    &.cm3 {
+      opacity: 1;
+      color: #E01F7F;
+      left: 63vw;
+    }
+  }
+
   /*START HANDLE PROGRAMMING BACK ITEMS*/
   &-line1 {
     width: 25vw;

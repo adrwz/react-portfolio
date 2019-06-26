@@ -98,6 +98,12 @@ export default class HoverLayer extends React.Component {
         </div>;
     }
 
+    //Handles 'click here!' text class
+    var clickMe = "Hover-clickMe";
+    if(this.props.index === 1) clickMe += " cm1";
+    if(this.props.index === 2) clickMe += " cm2";
+    if(this.props.index === 3) clickMe += " cm3";
+
     //Handles actual back text content
     let backText;
     if(this.props.index === 1) backText="Code";
@@ -109,6 +115,8 @@ export default class HoverLayer extends React.Component {
         <h1 className={backTextClass}>{backText}</h1>
         <img className="Hover-basicLogo" src={img} />
         <img className="Hover-basicLogo2" src={img2} />
+
+        <p className={clickMe}>Click me!<img src={this.props.index == 3 ? require('./../../images/arrow3.png') : require('./../../images/arrow2.png')} className="Hover-clickMeImg" /></p>
 
         {mainItems}
         {backgroundItems}
