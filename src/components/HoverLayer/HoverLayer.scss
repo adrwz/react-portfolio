@@ -332,6 +332,27 @@
         clip-path: inset(0vh 0vw 0vh 0vw);
       }
     }
+
+    &d {
+      width: 55vw;
+      position: absolute;
+      left: 39vw;
+      top: 10vh;
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design1d 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design1d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 55vw);
+        }
+      }
+    }
   }
 
   &-design2 {
@@ -354,6 +375,27 @@
       }
     }
 
+    &d {
+      width: 60vw;
+      position: absolute;
+      left: 37vw;
+      top: calc(10vh + 1.73vw);
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design2d 1.5s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design2d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 60vw);
+        }
+      }
+    }
+
     &-1 {
       width: 60vw;
       height: .1vw;
@@ -373,6 +415,29 @@
 
         100% {
           clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+      }
+
+      &d {
+        width: 60vw;
+        height: .1vw;
+        background-color: white;
+        position: absolute;
+        left: 37vw;
+        top: calc(10vh + 5.45vw);
+
+        clip-path: inset(0vh 0vw 0vh 0vw);
+        animation: design21d 1.5s ease 0s;
+        animation-fill-mode: forwards;
+
+        @keyframes design21d {
+          0% {
+            clip-path: inset(0vh 0vw 0vh 0vw);
+          }
+
+          100% {
+            clip-path: inset(0vh 0vw 0vh 60vw);
+          }
         }
       }
     }
@@ -398,6 +463,29 @@
           clip-path: inset(0vh 0vw 0vh 0vw);
         }
       }
+
+      &d {
+        width: 0.1vw;
+        height: 10vw;
+        background-color: white;
+        position: absolute;
+        left: 66.65vw;
+        top: calc(10vh - 1vw);
+
+        clip-path: inset(0vh 0vw 0vh 0vw);
+        animation: design22d 1s ease 0s;
+        animation-fill-mode: forwards;
+
+        @keyframes design22d {
+          0% {
+            clip-path: inset(0vh 0vw 0vh 0vw);
+          }
+
+          100% {
+            clip-path: inset(20vh 0vw 0vh 0vw);
+          }
+        }
+      }
     }
   }
 
@@ -408,7 +496,7 @@
     top: calc(30vh + 10vw);
 
     clip-path: inset(0vh 67vw 0vh 0vw);
-    animation: design3 2s ease 1s;
+    animation: design3 1.5s ease 0s;
     animation-fill-mode: forwards;
 
     @keyframes design3 {
@@ -418,6 +506,27 @@
 
       100% {
         clip-path: inset(0vh 0vw 0vh 0vw);
+      }
+    }
+
+    &d {
+      width: 67vw;
+      position: absolute;
+      left: 14.8vw;
+      top: calc(30vh + 10vw);
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design3d 1.5s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design3d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 67vw);
+        }
       }
     }
   }
@@ -442,6 +551,28 @@
         clip-path: inset(0vh 0vw 0vh 0vw);
       }
     }
+
+    &d {
+      width: 25vw;
+      position: absolute;
+      left: 34vw;
+      top: calc(30vh + 6vw);
+      z-index: 3;
+
+      opacity: 1;
+      animation: design4d 1.5s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design4d {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+    }
   }
 
   &-design5 {
@@ -452,7 +583,7 @@
     z-index: 3;
 
     clip-path: inset(0vh 74vw 0vh 0vw);
-    animation: design5 2s ease 0s;
+    animation: design5 1s ease 0s;
     animation-fill-mode: forwards;
 
     @keyframes design5 {
@@ -462,6 +593,28 @@
 
       100% {
         clip-path: inset(0vh 0vw 0vh 0vw);
+      }
+    }
+
+    &d {
+      width: 74vw;
+      position: absolute;
+      left: 13.8vw;
+      top: calc(30vh + 3.9vw);
+      z-index: 3;
+
+      opacity: 1;
+      animation: design5d 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design5d {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
       }
     }
   }
@@ -486,6 +639,28 @@
         clip-path: inset(0vh 0vw 0vh 0vw);
       }
     }
+
+    &d {
+      width: 1vw;
+      position: absolute;
+      left: 42vw;
+      top: calc(30vh + 3vw);
+      z-index: 3;
+
+      opacity: 1;
+      animation: design6d 1s ease 04s;
+      animation-fill-mode: forwards;
+
+      @keyframes design6d {
+        0% {
+          opacity: 1;
+        }
+
+        100% {
+          opacity: 0;
+        }
+      }
+    }
   }
 
   &-design7 {
@@ -508,6 +683,28 @@
         clip-path: inset(0vh 0vw 0vh 0vw);
       }
     }
+
+    &d {
+      width: 10vw;
+      position: absolute;
+      left: 21.5vw;
+      top: 18vh;
+      z-index: 3;
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design7d 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design7d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 10vw);
+        }
+      }
+    }
   }
 
   &-design8 {
@@ -518,7 +715,7 @@
     z-index: 3;
 
     clip-path: inset(0vh 8vw 0vh 0vw);
-    animation: design8 1s ease 0.4s;
+    animation: design8 1s ease 0.7s;
     animation-fill-mode: forwards;
 
     @keyframes design8 {
@@ -528,6 +725,28 @@
 
       100% {
         clip-path: inset(0vh 0vw 0vh 0vw);
+      }
+    }
+
+    &d {
+      width: 8vw;
+      position: absolute;
+      left: 30vw;
+      top: calc(30vh + 13.5vw);
+      z-index: 3;
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design8d 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design8d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 8vw);
+        }
       }
     }
   }
@@ -540,7 +759,7 @@
     z-index: 3;
 
     clip-path: inset(0vh 11vw 0vh 0vw);
-    animation: design9 1s ease 0.4s;
+    animation: design9 1s ease 1s;
     animation-fill-mode: forwards;
 
     @keyframes design9 {
@@ -550,6 +769,28 @@
 
       100% {
         clip-path: inset(0vh 0vw 0vh 0vw);
+      }
+    }
+
+    &d {
+      width: 11vw;
+      position: absolute;
+      left: 49vw;
+      top: 30vh;
+      z-index: 3;
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design9d 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design9d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 11vw);
+        }
       }
     }
   }
@@ -562,7 +803,7 @@
     z-index: 3;
 
     clip-path: inset(0vh 6vw 0vh 0vw);
-    animation: design10 1s ease 0.4s;
+    animation: design10 1s ease 1.3s;
     animation-fill-mode: forwards;
 
     @keyframes design10 {
@@ -572,6 +813,28 @@
 
       100% {
         clip-path: inset(0vh 0vw 0vh 0vw);
+      }
+    }
+
+    &d {
+      width: 6vw;
+      position: absolute;
+      left: 75vw;
+      top: calc(30vh + 4.5vw);
+      z-index: 3;
+
+      clip-path: inset(0vh 0vw 0vh 0vw);
+      animation: design10d 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes design10d {
+        0% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 6vw);
+        }
       }
     }
   }

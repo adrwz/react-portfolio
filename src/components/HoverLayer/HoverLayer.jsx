@@ -76,21 +76,21 @@ export default class HoverLayer extends React.Component {
           <img className="Hover-line3d" src={require('./../../images/programming/line3.png')} />
         </div>;
     } else if(this.props.secondIndex === 2) {
-      // backgroundItems = 
-      //   <div>
-      //     <img className="Hover-design1d" src={require('./../../images/design/mainfront.png')} />
-      //     <img className="Hover-design2d" src={require('./../../images/design/mainfrontline.png')} />
-      //     <div className="Hover-design2-1d"></div>
-      //     <div className="Hover-design2-2d"></div>
-      //     <img className="Hover-design3d" src={require('./../../images/design/mainisometric.png')} />
-      //     <img className="Hover-design4d" src={require('./../../images/design/mainx.png')} />
-      //     <img className="Hover-design5d" src={require('./../../images/design/mainy.png')} />
-      //     <img className="Hover-design6d" src={require('./../../images/design/mainz.png')} />
-      //     <img className="Hover-design7d" src={require('./../../images/design/mainlabel1.png')} />
-      //     <img className="Hover-design8d" src={require('./../../images/design/mainlabel2.png')} />
-      //     <img className="Hover-design9d" src={require('./../../images/design/mainlabel3.png')} />
-      //     <img className="Hover-design10d" src={require('./../../images/design/mainlabel4.png')} />
-      //   </div>;
+      backgroundItems =
+        <div>
+          <img className="Hover-design1d" src={require('./../../images/design/mainfront.png')} />
+          <img className="Hover-design2d" src={require('./../../images/design/mainfrontline.png')} />
+          <div className="Hover-design2-1d"></div>
+          <div className="Hover-design2-2d"></div>
+          <img className="Hover-design3d" src={require('./../../images/design/mainisometric.png')} />
+          <img className="Hover-design4d" src={require('./../../images/design/mainx.png')} />
+          <img className="Hover-design5d" src={require('./../../images/design/mainy.png')} />
+          <img className="Hover-design6d" src={require('./../../images/design/mainz.png')} />
+          <img className="Hover-design7d" src={require('./../../images/design/mainlabel1.png')} />
+          <img className="Hover-design8d" src={require('./../../images/design/mainlabel2.png')} />
+          <img className="Hover-design9d" src={require('./../../images/design/mainlabel3.png')} />
+          <img className="Hover-design10d" src={require('./../../images/design/mainlabel4.png')} />
+        </div>;
     } else if(this.props.secondIndex === 3) {
       backgroundItems =
         <div>
