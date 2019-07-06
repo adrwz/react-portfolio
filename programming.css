@@ -3,6 +3,8 @@ body {
   padding: 0;
   position: relative;
   z-index: -2;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .prog-header {
@@ -54,13 +56,14 @@ body {
   width: 70%;
   margin-left: 15%;
   position: relative;
-  z-index: -1;
+  z-index: -2;
 }
 
 .prog-featured {
   margin-left: -15%;
   width: 130%;
   padding-top: 3.5vw;
+  position: relative;
 }
 
 .prog-featuredLeft {
@@ -319,6 +322,134 @@ body {
 
 .prog-contactLink:hover {
   color: #323638;
+}
+
+
+
+
+
+
+.l1 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: .1vw;
+  height: 32.8vw;
+  left: -10.5vw;
+}
+
+.l2 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: .05vw;
+  height: 32.8vw;
+}
+
+.l3 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: .05vw;
+  height: 32.8vw;
+  left: 23.5vw;
+}
+
+.l4 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: .05vw;
+  height: 32.8vw;
+  left: 25.25vw;
+}
+
+.l5 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: .05vw;
+  height: 32.8vw;
+  left: 70vw;
+}
+
+.l6 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: .05vw;
+  height: 33.7vw;
+  left: 80.4vw;
+}
+
+.l7 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 4.45vw;
+}
+
+.l8 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 5.45vw;
+}
+
+.l9 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 8.1vw;
+}
+
+.l10 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 11.4vw;
+}
+
+.l11 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 19.3vw;
+}
+
+.l12 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 25vw;
+}
+
+.l13 {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  width: 100vw;
+  height: 0.05vw;
+  left: -15vw;
+  top: 28.25vw;
 }
 
 
