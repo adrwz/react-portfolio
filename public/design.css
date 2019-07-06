@@ -1,0 +1,356 @@
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: -2;
+}
+
+.design-header {
+  width: 100%;
+}
+
+.design-logo {
+  width: 14%;
+  position: absolute;
+  top: 2.8vw;
+  left: 3%;
+}
+
+.design-topbar {
+  position: absolute;
+  top: 13.2vw;
+  left: 3%;
+}
+
+.design-toplink {
+  font-family: source sans pro, sans-serif;
+  font-weight: 300;
+  font-size: 3vw;
+  text-decoration: none;
+  color: white;
+  margin-right: 5vw;
+}
+
+.design-toplink:visited {
+  text-decoration: none;
+}
+
+.design-toplink.main {
+  font-weight: 600;
+  font-size: 5vw;
+
+}
+
+
+
+
+
+
+
+
+.design-spine {
+  background-color: #F0EFEF;
+  width: 70%;
+  margin-left: 15%;
+  position: relative;
+  z-index: -1;
+}
+
+.design-featured {
+  margin-left: -15%;
+  width: 130%;
+  padding-top: 3.5vw;
+}
+
+.design-featuredLeft {
+  display: inline-block;
+  vertical-align: top;
+  width: 34vw;
+  margin: 0;
+}
+
+.design-featuredRight {
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 1.5vw;
+  width: 55vw;
+  height: 24.75vw;
+}
+
+.design-mainImg {
+  width: 33vw;
+  position: relative;
+  z-index: 1;
+}
+
+.design-mainImgShadow {
+  width: 33vw;
+  height: 24.75vw;
+  background-color: #323638;
+  position: absolute;
+  margin: 1vw 0vw 0vw 1vw;
+}
+
+
+
+.design-featuredIndicator {
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  font-size: 1.45vw;
+  color: #2975B1;
+  margin-top: 0.55vw;
+}
+
+.design-featuredTitle {
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  font-size: 3.5vw;
+  margin-top: -3.7vw;
+  margin-bottom: 0;
+  position: relative;
+  left: -0.18vw;
+}
+
+.design-featuredParagraph {
+  font-family: proxima nova, sans-serif;
+  font-size: 1.8vw;
+  margin-top: 2vw;
+  height: 12.23vw;
+  text-align: justify;
+}
+
+.design-featuredLink {
+  position: absolute;
+  font-family: proxima nova, sans-serif;
+  font-size: 1.8vw;
+  color: white;
+  background-color: #2975B1;
+  padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+  border-radius: 0.3vw;
+  text-decoration: none;
+}
+
+.design-featuredLink:hover {
+  background-color: #2b81c4;
+  transition: 0.5s;
+}
+
+
+
+.design-row {
+  margin-left: -10.5vw;
+  width: 91vw;
+  padding-top: 4.5vw;
+}
+
+.design-cell {
+  width: 30%;
+  margin-right: 4.74%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.design-cell.last {
+  margin-right: 0%;
+}
+
+.design-cellImg {
+  width: 26.5vw;
+  position: relative;
+  z-index: 1;
+}
+
+.design-cellImgShadow {
+  width: 26.5vw;
+  height: 19.875vw;
+  position: absolute;
+  margin-left: 0.8vw;
+  margin-top: 0.8vw;
+  background-color: #323638;
+}
+
+.design-cellTitle {
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  font-size: 2.3vw;
+  margin-bottom: 0;
+  position: relative;
+  left: -0.1vw;
+}
+
+.design-cellParagraph {
+  font-family: proxima nova, sans-serif;
+  font-size: 1.3vw;
+  margin-top: 1vw;
+  height: 10vw;
+  text-align: justify;
+}
+
+.design-cellLink {
+  font-family: proxima nova, sans-serif;
+  font-size: 1.3vw;
+  color: white;
+  background-color: #2975B1;
+  padding: 0.5vw 1.5vw 0.5vw 1.5vw;
+  border-radius: 0.3vw;
+  text-decoration: none;
+}
+
+.design-cellLink:hover {
+  background-color: #2b81c4;
+  transition: 0.5s;
+}
+
+
+
+
+
+
+
+.design-skills {
+  width: 100vw;
+  margin-left: -15vw;
+  background-color: #323638;
+  margin-top: 8vw;
+  padding: 3vw;
+}
+
+.design-skillsTitle {
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  font-size: 3.5vw;
+  margin: 0;
+  margin-left: 1vw;
+  margin-bottom: 1vw;
+  color: white;
+  position: relative;
+}
+
+.design-skillsBar {
+  width: 90vw;
+  background-color: white;
+  padding: 0;
+  padding: 0;
+  margin: 1vw 0vw 0vw 1vw;
+  border-radius: 0.3vw;
+}
+
+.design-skillsBarIn {
+  background: rgb(44,92,129);
+  background: linear-gradient(90deg, rgba(44,92,129,1) 0%, rgba(41,117,177,1) 100%);
+  margin: 0;
+  position: inline-block;
+  padding: 0.02vw 1vw 0.02vw 1vw;
+  border-radius: 0.3vw 0vw 0vw 0.3vw;
+}
+
+.a1 {
+  width: 75vw;
+}
+
+.a2 {
+  width: 64vw;
+}
+
+.a3 {
+  width: 45vw;
+}
+
+.a4 {
+  width: 85vw;
+}
+
+.design-skillsBarText {
+  color: white;
+  font-family: proxima nova, sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  display: inline-block;
+}
+
+.design-skillsBarHighlight {
+  font-weight: 300;
+}
+
+.design-skillsBarYears {
+  color: rgb(44,92,129);
+  display: inline-block;
+  font-family: proxima nova, sans-serif;
+  font-weight: 600;
+  font-size: 1vw;
+  float: right;
+}
+
+
+
+
+
+
+.design-contact {
+  width: 100vw;
+  margin-left: -15vw;
+  padding: 3vw;
+  padding-bottom: 20vw;
+}
+
+.design-contactTitle {
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  font-size: 3.5vw;
+  margin: 0;
+  margin-left: 1vw;
+  margin-bottom: 2vw;
+  color: #323638;
+  position: relative;
+}
+
+.design-contactParagraph {
+  font-family: proxima nova, sans-serif;
+  font-weight: 500;
+  font-size: 1.5vw;
+  margin: 0;
+  margin-left: 1.2vw;
+  color: #323638;
+  position: relative;
+}
+
+.design-contactLink {
+  cursor: pointer;
+  text-decoration: none;
+  color: #4b5e68;
+}
+
+.design-contactLink:hover {
+  color: #323638;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
