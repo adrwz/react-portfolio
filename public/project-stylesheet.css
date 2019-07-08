@@ -1,0 +1,85 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.proj-top {
+  background-color: #323638;
+  padding: 1vw;
+  padding-left: 3vw;
+}
+
+.proj-topLink {
+  color: white;
+  text-decoration: none;
+  font-family: proxima nova, sans-serif;
+  font-weight: 300;
+  font-size: 2vw;
+  display: inline-block;
+}
+
+.proj-topImg {
+  height: 2.5vw;
+  margin-top: 0.15vw;
+  margin-right: 3vw;
+  float: right;
+}
+
+
+
+
+
+
+
+.proj-body {
+  background-color: #F0EFEF;
+  width: 70vw;
+  margin-left: 15vw;
+  margin-top: 4vw;
+  position: relative;
+  z-index: -2;
+}
+
+.proj-logo {
+  display: inline-block;
+  vertical-align: top;
+  height: 8vw;
+}
+
+.proj-descDiv {
+  display: inline-block;
+  vertical-align: top;
+  height: 8vw;
+  margin-left: -.25vw;
+  padding: 0;
+}
+
+.proj-title {
+  margin: -.7vw 0vw 0vw -0.25vw;
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  font-size: 2.8vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**/
