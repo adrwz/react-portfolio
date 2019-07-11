@@ -1,6 +1,8 @@
 html, body {
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: -2;
 }
 
 .proj-top {
@@ -55,10 +57,112 @@ html, body {
 }
 
 .proj-title {
-  margin: -.7vw 0vw 0vw -0.25vw;
+  margin: -.95vw 0vw 0vw -0.3vw;
+  color: #323638;
   font-family: source sans pro, sans-serif;
   font-weight: 600;
-  font-size: 2.8vw;
+  font-size: 3.5vw;
+}
+
+.proj-quickline {
+  color: #323638;
+  font-family: proxima nova, sans-serif;
+  font-size: 1.2vw;
+  margin: 1.5vw 0vw 0vw -0.15vw;
+}
+
+.proj-titlelink {
+  color: #2975B1;
+  font-family: proxima nova, sans-serif;
+  font-size: 1.2vw;
+  margin: -1vw 0vw 0vw -0.15vw;
+}
+
+
+
+
+
+
+.proj-summary {
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  background-color: #323638;
+  padding: 1vw 2vw 1vw 2vw;
+}
+
+.proj-summaryText {
+  color: white;
+  font-family: proxima nova, sans-serif;
+  font-size: 1.2vw;
+}
+
+.proj-content {
+
+}
+
+.proj-subtitle {
+  font-family: source sans pro, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  font-size: 2vw;
+  margin-top: 6vw;
+  margin-bottom: 2vw;
+}
+
+.proj-title3 {
+  font-family: source sans pro, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+  margin-top: 4vw;
+  margin-bottom: 2vw;
+}
+
+.proj-p {
+  font-family: proxima nova, sans-serif;
+  font-size: 1.2vw;
+  margin-bottom: 2vw;
+  text-align: justify;
+}
+
+.proj-img {
+  width: 100%;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+
+.proj-quote {
+  color: #6D7174;
+  font-family: proxima nova, sans-serif;
+  font-size: 1.2vw;
+  font-style: italic;
+  margin-bottom: 2vw;
+  text-align: justify;
+  border-left: .3vw solid #6D7174;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.proj-ul {
+  color: #323638;
+  margin-bottom: 2vw;
+  padding: 0vw 4vw 0vw 4vw;
+  font-family: proxima nova, sans-serif;
+  font-size: 1.2vw;
+}
+
+.proj-back {
+  background-color: #323638;
+  color: white;
+  text-decoration: none;
+  font-family: proxima nova, sans-serif;
+  font-weight: 600;
+  font-size: 1.6vw;
+  padding: 0.7vw 3vw 0.7vw 2vw;
+  border-radius: 0.3vw;
+  display: inline-block;
+  margin-top: 4vw;
+  margin-bottom: 10vw;
 }
 
 
