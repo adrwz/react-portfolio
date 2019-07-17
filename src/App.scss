@@ -127,7 +127,7 @@ html, body {
     }
 
     &.top3 {
-      color: black;
+      color: white;
     }
   }
 
@@ -248,11 +248,11 @@ html, body {
     &.passive3 {
       opacity: 1;
       text-shadow:
-        -1px -1px 0 #df2380,
-        1px -1px 0 #df2380,
-        -1px 1px 0 #df2380,
-        1px 1px 0 #df2380;
-        color: #efe8f0;
+        -1px -1px 0 #F6EE5F,
+        1px -1px 0 #F6EE5F,
+        -1px 1px 0 #F6EE5F,
+        1px 1px 0 #F6EE5F;
+        color: #603890;
     }
 
     &.hover1 {
@@ -274,7 +274,7 @@ html, body {
     &.hover3 {
       opacity: 1;
       top: -5vh;
-      color: #df2380;
+      color: #F6EE5F;
       text-shadow: none;
       font-size: 4vw;
     }
@@ -317,7 +317,7 @@ html, body {
 
       &.hover3 {
         opacity: 1;
-        color: #df2380;
+        color: #F6EE5F;
         clip-path: inset(0vh 0vw 0vh 0vw);
         top: -5vh;
         font-size: 4vw;

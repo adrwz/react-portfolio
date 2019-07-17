@@ -60,7 +60,7 @@
       height: 100vh;
       position: absolute;
       z-index: 5;
-      background-color: #efe8f0;
+      background-color: #603890;
 
       &.a {
         opacity: 0;
@@ -117,7 +117,7 @@
     }
 
     &.back3 {
-      opacity: 0.52;
+      opacity: 0.1;
       margin: -2.5vw;
       margin-top: 12vh;
 
@@ -157,6 +157,31 @@
       position: absolute;
       top: 30vh;
       left: 15vw;
+
+      &.entre {
+        width: 77vw;
+        top: 26vh;
+      }
+    }
+
+    &.entre {
+      width: 77vw;
+      top: 26vh;
+
+      clip-path: inset(0vh 100vw 0vh 0vw);
+      opacity: 1;
+      animation: hoverLogo2 1s ease 0s;
+      animation-fill-mode: forwards;
+
+      @keyframes hoverLogo2 {
+        0% {
+          clip-path: inset(0vh 100vw 0vh 0vw);
+        }
+
+        100% {
+          clip-path: inset(0vh 0vw 0vh 0vw);
+        }
+      }
     }
   }
 
@@ -167,6 +192,7 @@
     color: white;
     transition: 1s;
     opacity: 0;
+    z-index: 1;
 
     font: {
       family: source sans, sans-serif;
@@ -192,7 +218,6 @@
 
     &.cm3 {
       opacity: 1;
-      color: #E01F7F;
       left: 63vw;
     }
   }
@@ -872,6 +897,33 @@
         100% {
           clip-path: inset(0vh 0vw 0vh 6vw);
         }
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+  &-entre1 {
+    position: absolute;
+    height: 100vh;
+    opacity: 0.5;
+
+    clip-path: inset(100vh 0vw 0vh 0vw);
+    animation: entre1 1.5s ease 0.3s;
+    animation-fill-mode: forwards;
+
+    @keyframes entre1 {
+      0% {
+        clip-path: inset(100vh 0vw 0vh 0vw);
+      }
+
+      100% {
+        clip-path: inset(0vh 0vw 0vh 0vw);
       }
     }
   }

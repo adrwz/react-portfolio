@@ -31,8 +31,10 @@ export default class HoverLayer extends React.Component {
     //Handles image name and image styling
     let img;
     let img2;
-    if(this.props.index == 1 || this.props.index == 2 || this.props.index == 3) img = require('./../../images/name-' + this.props.index + ".png");
-    if(this.props.secondIndex == 1 || this.props.secondIndex == 2 || this.props.secondIndex == 3) img2 = require('./../../images/name-' + this.props.secondIndex + ".png");
+    if(this.props.index == 1 || this.props.index == 3) img = require('./../../images/name-' + this.props.index + '.svg');
+    if(this.props.index == 2) img = require('./../../images/name-' + this.props.index + ".png"); //png for performance related issues
+    if(this.props.secondIndex == 1 || this.props.secondIndex == 3) img2 = require('./../../images/name-' + this.props.secondIndex + ".svg");
+    if(this.props.secondIndex == 2) img2 = require('./../../images/name-2.png');
 
     //Handles indexed non-named items
     let mainItems; //Items for top index
@@ -62,9 +64,20 @@ export default class HoverLayer extends React.Component {
           <img className="Hover-design10" src={require('./../../images/design/mainlabel4.png')} />
         </div>;
     } else if(this.props.index === 3) {
+      var polkadotsWidth = window.innerHeight * 0.02733485;
+
+      let polkadots = [];
+      for(var it = 0; it < window.innerWidth; it += 30) {
+        let dotsStyle = {
+          left: it + 'px',
+        };
+
+        polkadots.push(<img key={it} className="Hover-entre1" style={dotsStyle} src={require('./../../images/entrepreneurship/polkadots.svg')} />);
+      }
+
       mainItems =
         <div>
-
+          {polkadots}
         </div>;
     }
     if(this.props.secondIndex === 1) {
@@ -91,11 +104,6 @@ export default class HoverLayer extends React.Component {
           <img className="Hover-design9d" src={require('./../../images/design/mainlabel3.png')} />
           <img className="Hover-design10d" src={require('./../../images/design/mainlabel4.png')} />
         </div>;
-    } else if(this.props.secondIndex === 3) {
-      backgroundItems =
-        <div>
-
-        </div>;
     }
 
     //Handles 'click here!' text class
@@ -103,6 +111,12 @@ export default class HoverLayer extends React.Component {
     if(this.props.index === 1) clickMe += " cm1";
     if(this.props.index === 2) clickMe += " cm2";
     if(this.props.index === 3) clickMe += " cm3";
+
+    //Handles different styling for 'entrepreneurship' panel
+    var logo1 = "Hover-basicLogo";
+    var logo2 = "Hover-basicLogo2";
+    if(this.props.index === 3) logo1 += " entre";
+    if(this.props.secondIndex === 3) logo2 += " entre";
 
     //Handles actual back text content
     let backText;
@@ -113,10 +127,10 @@ export default class HoverLayer extends React.Component {
     return (
       <div className={bgClass}>
         <h1 className={backTextClass}>{backText}</h1>
-        <img className="Hover-basicLogo" src={img} />
-        <img className="Hover-basicLogo2" src={img2} />
+        <img className={logo1} src={img} />
+        <img className={logo2} src={img2} />
 
-        <p className={clickMe}>Click me!<img src={this.props.index == 3 ? require('./../../images/arrow3.png') : require('./../../images/arrow2.png')} className="Hover-clickMeImg" /></p>
+        <p className={clickMe}>Click me!<img src={require('./../../images/arrow2.png')} className="Hover-clickMeImg" /></p>
 
         {mainItems}
         {backgroundItems}
