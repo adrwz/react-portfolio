@@ -311,6 +311,53 @@ b {
 
 
 
+.proj-showcaseFeaturedText {
+  color: white;
+  font-family: source sans pro, proxima nova, sans-serif;
+  font-weight: 600;
+  font-size: 1.5vw;
+  margin-bottom: -1vw;
+}
+
+.proj-showcaseFeatured {
+  margin-top: 6vw;
+  margin-bottom: 6vw;
+  margin-left: -25vw;
+  margin-right: -25vw;
+  background-color: #323638;
+  padding: 3vw 25vw 3vw 25vw;
+}
+
+.proj-showcaseContentLeft {
+  margin-left: -15vw;
+  float: left;
+  width: 38vw;
+}
+
+.proj-showcaseContentRight {
+  margin-right: -15vw;
+  float: right;
+  width: 38vw;
+}
+
+.proj-showcaseImg {
+  width: 100%;
+  margin-top: 2vw;
+  margin-right: 2vw;
+  margin-bottom: 2vw;
+  float: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 

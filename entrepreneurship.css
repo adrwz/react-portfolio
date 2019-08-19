@@ -201,7 +201,7 @@ body {
   font-family: proxima nova, sans-serif;
   font-size: 1.3vw;
   margin-top: 1vw;
-  height: 10vw;
+  height: 7vw;
   text-align: justify;
 }
 
@@ -260,23 +260,23 @@ body {
   margin: 0;
   position: inline-block;
   padding: 0.02vw 1vw 0.02vw 1vw;
-  border-radius: 0.3vw 0vw 0vw 0.3vw;
+  border-radius: 0.3vw;
 }
 
 .a1 {
-  width: 75vw;
+  width: 90vw;
 }
 
 .a2 {
-  width: 74vw;
+  width: 90vw;
 }
 
 .a3 {
-  width: 70vw;
+  width: 90vw;
 }
 
 .a4 {
-  width: 65vw;
+  width: 90vw;
 }
 
 .entre-skillsBarText {
