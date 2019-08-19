@@ -159,27 +159,26 @@
       left: 15vw;
 
       &.entre {
-        width: 77vw;
-        top: 26vh;
+        width: 70vw;
+        top: 27vh;
       }
     }
 
     &.entre {
-      width: 77vw;
-      top: 26vh;
+      width: 70vw;
+      top: 27vh;
 
-      clip-path: inset(0vh 100vw 0vh 0vw);
-      opacity: 1;
+      opacity: 0;
       animation: hoverLogo2 1s ease 0s;
       animation-fill-mode: forwards;
 
       @keyframes hoverLogo2 {
         0% {
-          clip-path: inset(0vh 100vw 0vh 0vw);
+          opacity: 0;
         }
 
         100% {
-          clip-path: inset(0vh 0vw 0vh 0vw);
+          opacity: 1;
         }
       }
     }
